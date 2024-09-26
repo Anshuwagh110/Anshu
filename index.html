@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do You Love Me ?</title>
+    <link href="https://fonts.cdnfonts.com/css/bloodstone" rel="stylesheet">
+    <style>
+        p {
+            color: green;
+            width: 1000px;
+            height: 200px;
+            font-size: 100px;
+            font-weight: bold ;
+        }
+        button {
+            width: 330px;
+            height: 100px;
+            margin: 25px;
+            border: 1px solid black;
+            font-weight: bold;
+            font-size: 40px;
+            background: transparent;
+        }
+        div {
+            width: 100%;
+            height: 100px;
+            font-weight: bold;
+            font-size: 55px;
+          
+        }
+       
+        body {
+            background-size: cover;
+        }
+    </style>
+</head>
+<body id="body" class="kk">
+    <p id="font">Do You Like Me ?</p>   
+    <br>
+    <br>
+    <div id="d1"></div>
+    <div id="d2" style="font-family: 'bloodstone', seriff;"></div>
+    <br>
+
+    <br>
+    <button id="b1" onclick="anshu()">Yes</button>
+    <button id="b2" onclick="jaya()">No</button>
+    <script type="text/javascript">
+        function anshu() {
+            var a="Thank You And I Like You 2...💖"
+            document.getElementById("d1").innerHTML=a;
+            document.getElementById("body").style.backgroundColor="white";
+            document.getElementById("d1").style.backgroundColor="#0";
+            document.getElementById("d2").style.backgroundColor="#0";
+             document.getElementById("b1").style.color="black";
+            document.getElementById("b2").style.color="black";
+            document.getElementById("b1").style.borderColor="black";
+            document.getElementById("b2").style.borderColor="black";
+           
+            document.getElementById("font").style.fontFamily="";
+            document.getElementById("b1").style.fontFamily="";
+            document.getElementById("b2").style.fontFamily="";
+            document.getElementById("body").style.backgroundImage="url('/storage/emulated/0/Download/Anshu.jpg')";
+           
+            document.getElementById("d2").innerHTML="";
+        }
+        function jaya() {
+            var j="please love me...😈"
+            document.getElementById("d2").innerHTML=j;
+            document.getElementById("d1").style.backgroundColor="#0";
+            document.getElementById("d2").style.backgroundColor="#0";
+            document.getElementById("body").style.backgroundColor="black";
+           
+            document.getElementById("d2").style.color="white";
+            document.getElementById("b1").style.color="white";
+            document.getElementById("b2").style.color="white";
+            document.getElementById("d2").style.color="red";
+           document.getElementById("b1").style.borderColor="white";
+            document.getElementById("b2").style.borderColor="white";
+           
+            document.getElementById("font").style.fontFamily="'bloodstone', serif";
+                document.getElementById("b1").style.fontFamily="'bloodstone', serif";
+                document.getElementById("b2").style.fontFamily="'bloodstone', serif";
+            document.body.style.backgroundImage = "url('IMG-20240909-WA0037.jpeg')";
+  
+            document.getElementById("d1").innerHTML="";
+            confirm("You are sure...😔");
+        }
+    </script>
+</body>
+</html>
